@@ -12,7 +12,7 @@ export default {
 		sourcemap: true
 	},
 	plugins: [
-        production && cleaner({  // Only remove ./build when building for production.
+        cleaner({ 
             targets: [
               './build/'
             ]
